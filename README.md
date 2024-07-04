@@ -76,8 +76,8 @@ INSTALLED_APPS = [
 - python manage.py shell
 ```
 from django.contrib.auth.models import User
-User.objects.create_user('user1', password='password1')
-User.objects.create_user('user2', password='password2')
+User.objects.create_user('user1', password='password1', is_staff=True)
+User.objects.create_user('user2', password='password2', is_staff=True)
 ```
 # Run Tests
 - python manage.py test
