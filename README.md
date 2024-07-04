@@ -79,6 +79,17 @@ from django.contrib.auth.models import User
 User.objects.create_user('user1', password='password1', is_staff=True)
 User.objects.create_user('user2', password='password2', is_staff=True)
 ```
+```
+from django.contrib.auth.models import User
+
+# If you need to create a user:
+user = User.objects.create_user('username', password='password')
+user.is_staff = True
+user.save()
+
+# Fetch the user:
+user = User.objects.get(username='username')  # Replace 'username' with your actual username
+```
 # Run Tests
 - python manage.py test
 
