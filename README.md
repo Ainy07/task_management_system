@@ -1,9 +1,6 @@
 # task_management_system
 using django , drf
-<<<<<<< HEAD
-=======
 
->>>>>>> 59e13ebd8ba139c1d34b517f8b117b17ffe8d075
 ## Description
 
 This project is a backend for a simple task management system built with Django and Django Rest Framework. The application includes Task and Label models, with CRUD operations and user authentication.
