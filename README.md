@@ -146,9 +146,4 @@ Please ensure your code adheres to the PEP 8 style guide and includes proper doc
 ## License
 This project is licensed under the MIT License.
 
-
-<<<<<<< HEAD
 This `README.md` provides a comprehensive guide for setting up and running the project, as well as contributing to it. 
-=======
-This `README.md` provides a comprehensive guide for setting up and running the project, as well as contributing to it. 
->>>>>>> 59e13ebd8ba139c1d34b517f8b117b17ffe8d075
