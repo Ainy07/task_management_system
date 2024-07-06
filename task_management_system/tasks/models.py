@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Label(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=100)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
@@ -12,8 +12,8 @@ class Label(models.Model):
         return self.name
 
 class Task(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField(blank=True)
+    title = models.CharField(max_length=100)
+    description = models.TextField()
     completed = models.BooleanField(default=False)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     labels = models.ManyToManyField(Label, blank=True)
